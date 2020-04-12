@@ -11,8 +11,9 @@ public class App {
     Smile smile = new Smile();
 
     void initApp() {
-        smile.setSize(8, 8);
-        smile.setIcon("X");
+        smile.setSize(12, 12);
+        smile.setIcon("▓");
+        smile.setEmptyIcon(".");
         addCoordinates();
         smile.createImage();
         smile.printImage();

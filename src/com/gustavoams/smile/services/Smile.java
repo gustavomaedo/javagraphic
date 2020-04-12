@@ -14,7 +14,7 @@ public class Smile {
     boolean isSet = false;
     int height;
     int width;
-    String icon;
+    String icon = " X ";
     String noIcon = "   ";
     List<Map<String, Integer>> coordinates = new ArrayList<>();
     List<String> image = new ArrayList<>();
@@ -30,6 +30,12 @@ public class Smile {
     public void setIcon(String icon) {
         if(isSet) {
             this.icon = " "+icon+" ";
+        }
+    }
+
+    public void setEmptyIcon(String icon) {
+        if(isSet) {
+            this.noIcon = " "+icon+" ";
         }
     }
 
